@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<fragment
+    android:id="@+id/details"
+    android:name="com.example.nalband.myapplication.DetailsFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:layout="@layout/fragment_details"
+    />
+
+    <fragment
+        android:id="@+id/meme"
+        android:name="com.example.nalband.myapplication.MemeFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="334dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/fragment_meme" />
+</android.support.constraint.ConstraintLayout>
